@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+.banner-text{
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 100px;
+
+}
+.banner-text h1{
+	font-size: 50px;
+}
+.banner-text p{
+	font-size: 40px;
+	font-style: inherit;
+}
+#sideNav{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: lightblue;
+	z-index: 2;
+	transition: 0.5s;
+}
+nav ul li{
+	list-style: none;
+	margin: 40px 20px;	
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	
+}#menuBtn{
+	width: 50px;
+	height: 50px;
+	background: #b4cfec;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#menuBtn img{
+	width: 20px;
+	margin-top: 15px;
+
+}
+@media screen and (max-width: 770px){
+	.banner-text h1{
+		font-size: 20px;
+	}
+
+	.banner-btn a{
+		display: inline-block;
+		margin: 15px auto;
+	}
+}
+@media screen and (max-width: 770px){
+	.banner-text{
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 5px;
+	}
+}
+.nav ul li{
+	list-style: none;
+	margin: 1000px 20px;
+}
+.navbar{
+    overflow: hidden;
+    background: lightblue;
+}
+.navbar a{
+    float: left;
+    font-size: 15px; 
+    color: white;
+    text-align: center;
+    padding: 12px 12px; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.d{
+    float: left;
+    overflow: hidden;
+}
+.d .d-btn{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 13px 15px;
+    background: inherit;
+    text-transform: uppercase;
+}
+.navbar a:hover, .d:hover .d-btn{
+    background: #a0a0a0;
+}
+.d-content{
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+.d:hover .d-content{
+    display: block;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background:  #a0a0a0;
+    height: 200px;
+}
+.column a{
+    display: block;
+    float: none;
+    color: lightblue;
+    text-align: left;
+}
+.column h3{
+    color: #eee;
+    padding: 10px;
+}
+.column a:hover{
+    color: #ffff;
+    background: lightgrey;
+}
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+@media(max-width: 650px){
+    .column{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/***********HOME*****************/
+
+.title-text{
+	text-align: center;
+	padding-bottom:20px;
+}
+.title-text h1 i{
+    color: #666;
+}
+.title-text h1{
+	margin: auto;
+	font-size: 50px;
+	color: #666;
+    font-weight: 200;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+    padding-top: 20px;
+    margin-bottom: 25px;
+    font-family: serif;
+
+}
+.title-text h3{
+	font-size: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.25;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 20px lightblue, 0 0 5px lightblue;
+}
+/********Color*********/
+
+.color{
+    background: linear-gradient(rgba(0,0,0,0.20),lightblue),url(moreapps/lok9.jpg);
+    background-size: cover;
+	background-position: center;
+	height: 15vh;
+}
+.color1{
+    background-color:  lightblue;
+    padding-top: 100px;
+}
+.color2{
+    background-color:  lightblue;
+    padding-top: 100px;
+}
+/******Social links******/
+
+.Social-links{
+	text-align: center;
+	color: white;
+}
+.Social-links img{
+    height: 25px;
+	width: 30px;
+	font-size: 20px;
+	line-height: 68px;
+	border: 1px solid #efefef;
+	margin: 66px 15px -4;
+	cursor: pointer;
+	transition: .5s;
+}
+.Social-links .fa{
+	height: 20px;
+	width: 70px;
+	font-size: 25px;
+	line-height: 68px;
+	border: 1px sold #efefef;
+	margin: 50px 5px 0;
+	color:  #d300c5;
+	cursor: pointer;
+	transition: .5s;
+}
+.Social-links .fa:hover{
+	background: #efefef;
+	color: #fff;
+	transform: translate(-7px);
+}
+.Social-links p{
+	font-size: 50px;
+	margin-top: 45px;
+}
+
+/*****row*****/
+
+
+.info{
+    width: 100%;
+	flex-wrap: wrap;
+	margin: auto;
+    background-color: aliceblue;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.info video {
+    width: 180px;
+    margin: 25px;
+    border-radius: 1px;
+    border: 2px solid #888888;
+    max-width: 200px;
+    float: right;
+    margin-left: 25px;
+}
+.info p{
+    padding-left: 8px;
+    color: #4b5563;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+.info .intro-text{
+    max-width: 950px;
+    margin: 0 auto 20px;
+}
+.info i{
+    padding-left: 10px;
+}
+.info ol{
+    padding-left: 35px;
+}
+.info .btn{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    
+}
+
+/**********App1*********/
+.earn{
+    padding-top: 20px;
+}
+.app1{
+    margin: 21px auto;
+    width: 90%;
+}
+.app1 img{
+    max-width: 130px;
+    float: right;
+    border: 1px solid #666;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.app1 h1{
+    font-size: 22px;
+    color:green;
+}
+.app1 i{
+    color: mediumslateblue;
+}
+.app1 p{
+    font-size: 18px;
+    color: #666;
+}
+
+/**********App2*********/
+.app2{
+    margin: 15px auto;
+    width: 90%;
+}
+
+.app2 video{
+    max-width: 200px;
+    float: left;
+    border: 1px solid #0099ff;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+.app2 h2{
+    font-size: 22px;
+    color:green;
+}
+.app2 p{
+    font-size: 18px;
+    color: #666666;
+}
+.app2 i{
+    color: mediumslateblue;
+}
+
+/***********bottom************/
+.bottom3{
+    background-color: aliceblue;
+    margin: 25px auto;
+    width: 80%;
+}
+
+.bottom3 img{
+    max-width: 130px;
+    float: left;
+    border: 1px solid #0099ff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.bottom3 h1{
+    font-size: 22px;
+    color: #0099ff;
+}
+.bottom3 p{
+    font-size: 18px;
+   color: #666;
+}
+/*********footer*********/
+
+.content{
+    background-color: white;
+    padding: 25px;
+
+}
+.tasks{
+    margin: 25px auto;
+    width: 20%;
+}
+
+/************card*****************/
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.card{
+    width: 280px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px; 
+    text-align: center;
+    color: deepskyblue;
+}
+.card-content h4{
+    color: cornflowerblue;
+    font-size: 15px;
+    margin-bottom: 8px; 
+    text-align: left;
+}
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+}
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #0099ff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.card-content i{
+    color: blue;
+}
+
+/************card*****************/
+
+.new{
+    background: #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.new1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background: #efefef;
+}
+
+.new-apps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.new1 video{
+    width: 300px;
+    margin: 15px;
+    border-radius: 4px;
+    border: 2px solid #888888;
+    float: none;
+    max-width: 250px;
+    margin-left: 15px;
+}
+/************scam**************/
+.new1 img{
+    width: 178px;
+     margin: 15px;
+}
+.scam {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.scam img{
+    max-width: 130px;
+    float: right;
+    border: 1px solid #666;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.scam p{
+    color: #666;
+}
+/***************jobs*****************/
+.jobs{
+    padding-top: 30px;
+}
+
+
+
+
+
+/* ===== Professional typography & information styling ===== */
+body{
+    color: #1f2937;
+    background: #ffffff;
+    line-height: 1.6;
+}
+h1,h2,h3,h4{
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    letter-spacing: -0.01em;
+}
+.earn1 p, .earn2 p, .bottom3 p, .scam p{
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.75;
+}
+.earn1 ul, .scam ul{
+    line-height: 1.8;
+    color: #4b5563;
+}
+.earn1 li, .scam li{
+    margin-bottom: 6px;
+}
+.card-content p{
+    line-height: 1.6;
+}
+.card-content ul{
+    line-height: 1.7;
+    padding-left: 22px;
+}
+.disclaimer{
+    background: #f3f6f9;
+    border-top: 1px solid #dbe3ea;
+    padding: 42px 20px;
+}
+.disclaimer-inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.disclaimer h2{
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+.disclaimer p{
+    margin: 0;
+    color: #5b6573;
+    line-height: 1.75;
+    font-size: 15px;
+}
+@media (max-width: 650px){
+    .title-text h1{
+        font-size: 36px;
+    }
+    .title-text h3{
+        font-size: 21px;
+        padding: 0 15px;
+    }
+    .info{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .info p{
+        font-size: 16px;
+    }
+}
